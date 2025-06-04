@@ -1,0 +1,31 @@
+{
+    "Addr": "127.0.0.1:2000",
+    "Src": "127.0.0.1:4444",
+    "PktSize": 1000,
+    "TotalSession": 1,
+    "TotalStream": 1,
+    "TimeSlot": 50,
+    "TCP": false,
+    "InfoStream": [
+        {
+            "FileSize": 1,
+            "Distribution": {
+                "Type": "poisson",
+                "Rate": 26,
+                "Variance": null,
+                "Min": null,
+                "Max": null
+            }
+        },
+        {
+            "FileSize": 1,
+            "Distribution": {
+                "Type": "poisson",
+                "Rate": 20,
+                "Variance": null,
+                "Min": null,
+                "Max": null
+            }
+        }
+    ]
+}
