@@ -18,4 +18,16 @@ source ~/.bashrc
 ```
 
 
+To execute apps:
 
+- Client:
+
+```bash
+./go_client/go_client ./conf_quic.json 
+```
+
+- Server:
+
+```bash
+ ./go_server/server ./conf_quic.json 
+```
