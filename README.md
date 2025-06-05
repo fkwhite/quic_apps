@@ -55,6 +55,6 @@ To execute apps:
 
 Results will be saved in the following folders:
 
--  tmp/ — Contains results from the buffer as well as traces of both apps
+-  `tmp/`  — Contains results from the buffer as well as traces of both apps
 
--  LOGS_congestionWindow/ — Contains logs related to QUIC congestion window behavior.
+-  `LOGS_congestionWindow/`  — Contains logs related to QUIC congestion window behavior.
