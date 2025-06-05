@@ -25,13 +25,14 @@ source ~/.bashrc
 ## Project Structure
 
     .
-    ├── go_client/             # Client application (Go)
-    ├── go_server/             # Server application (Go)
-    ├── conf_quic.json         # Common configuration file for both apps
-    ├── LOGS_congestionWindow/ # Output folder for congestion window logs
-    ├── tmp/                   # Output folder for temporary results
-    ├── Makefile               # Automation script for install/build/run
-    └── README.md              # This file
+    ├── go_client/               # Client application (written in Go)
+    ├── go_server/               # Server application (written in Go)
+    ├── conf_quic.json           # Configuration file related to QUIC and data transmission
+    ├── conf_Scheduler.json      # Configuration file for scheduling behavior (used by both apps)
+    ├── LOGS_congestionWindow/   # Output folder for QUIC congestion window logs
+    ├── tmp/                     # Output folder for buffer results and app traces
+    ├── Makefile                 # Automation script for installation, build, and execution
+    └── README.md                # Project documentation
 
 
 
