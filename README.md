@@ -3,6 +3,18 @@
 This project does **not** compile with Go 1.20 or newer due to breaking changes in:
     - `quic-go` (`github.com/fkwhite/Quic_GO`)
 
+## Project Structure
+
+    .
+    ├── go_client/             # Client application (Go)
+    ├── go_server/             # Server application (Go)
+    ├── conf_quic.json         # Common configuration file for both apps
+    ├── LOGS_congestionWindow/ # Output folder for congestion window logs
+    ├── tmp/                   # Output folder for temporary results
+    ├── Makefile               # Automation script for install/build/run
+    └── README.md              # This file
+
+
 To install Go 1.19.13 manually:
 ```bash
 cd /tmp
@@ -31,3 +43,6 @@ To execute apps:
 ```bash
  ./go_server/server ./conf_quic.json 
 ```
+
+
+Results are stored at folders: tmp and LOGS_congestionWindow
