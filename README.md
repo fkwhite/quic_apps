@@ -16,3 +16,6 @@ Update your environment:
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
+
+
+
