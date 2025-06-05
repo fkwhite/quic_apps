@@ -1,19 +1,11 @@
 # Go Apps
 
-This project does **not** compile with Go 1.20 or newer due to breaking changes in:
-    - `quic-go` (`github.com/fkwhite/Quic_GO`)
+This project contains a client-server application using QUIC based on a modified version of quic-go.
 
-## Project Structure
 
-    .
-    ├── go_client/             # Client application (Go)
-    ├── go_server/             # Server application (Go)
-    ├── conf_quic.json         # Common configuration file for both apps
-    ├── LOGS_congestionWindow/ # Output folder for congestion window logs
-    ├── tmp/                   # Output folder for temporary results
-    ├── Makefile               # Automation script for install/build/run
-    └── README.md              # This file
-
+Important Compatibility Note:
+This project does not compile with Go 1.20 or newer due to breaking changes in quic-go.
+Please install and use Go 1.19.13 to build and run the application.
 
 To install Go 1.19.13 manually:
 ```bash
@@ -30,6 +22,20 @@ source ~/.bashrc
 ```
 
 
+## Project Structure
+
+    .
+    ├── go_client/             # Client application (Go)
+    ├── go_server/             # Server application (Go)
+    ├── conf_quic.json         # Common configuration file for both apps
+    ├── LOGS_congestionWindow/ # Output folder for congestion window logs
+    ├── tmp/                   # Output folder for temporary results
+    ├── Makefile               # Automation script for install/build/run
+    └── README.md              # This file
+
+
+
+
 To execute apps:
 
 - Client:
@@ -44,5 +50,10 @@ To execute apps:
  ./go_server/server ./conf_quic.json 
 ```
 
+## Output and Logs
 
-Results are stored at folders: tmp and LOGS_congestionWindow
+Results will be saved in the following folders:
+
+-  tmp/ — Contains results from the buffer as well as traces of both apps
+
+-  LOGS_congestionWindow/ — Contains logs related to QUIC congestion window behavior.
